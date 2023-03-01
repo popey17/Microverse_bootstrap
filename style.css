@@ -1,23 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Poppins&family=Roboto&display=swap');
 
 :root {
-    --interfont : font-family: 'Inter', sans-serif;
+    --interfont: font-family: 'Inter', sans-serif;
 }
 
-*{
+* {
     list-style: none;
     text-decoration: none;
 }
 
 section.home {
-  background: url(resoruces/home\ bg.svg) center no-repeat;
-  background-size: contain;
+    background: url(resoruces/home\ bg.svg) no-repeat center center / cover;
 }
 
 .hero-content {
     max-width: 800px;
     margin: auto;
     padding: 230px 0 650px 0;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+
 }
 
 .nav-item {
@@ -43,7 +50,7 @@ section.home {
     font-family: var(--interfont);
     font-size: 1.5rem;
     line-height: 32px;
-    text-align: center;
+    font-weight: 400;
 }
 
 i.fa-brands {
@@ -51,7 +58,7 @@ i.fa-brands {
     color: #505F79;
 }
 
-.down-btn{
+.down-btn {
     height: 17px;
     width: 17px;
     padding: 8px;
@@ -66,7 +73,27 @@ i.fa-brands {
 
 @media screen and (max-width: 992px) {
     section.home {
-        background: url(resoruces/header-illsutration-mobile.svg) center no-repeat;
-        background-size: cover;
-      }
+        background: url(resoruces/header-illsutration-mobile.svg) no-repeat center center;
+        background-size: calc(max(100%, 300px));
+    }
+
+    .navbar {
+        position: unset;
+        transform: unset;
+    }
+
+    .hero-content {
+        max-width: 80%;
+        padding: 74px 0 0 0;
+    }
+
+    .hero-content .hero-title,
+    .hero-content .hero-job {
+        font-size: 2.5rem;
+        font-weight: 700;
+        line-height: 52px;
+    }
+    .hero-content .hero-description {
+        font-size: 1.25rem;
+    }
 }
