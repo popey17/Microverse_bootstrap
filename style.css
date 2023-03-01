@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Poppins&family=Roboto&display=swap');
+
+:root {
+    --interfont : font-family: 'Inter', sans-serif;
+}
+
+*{
+    list-style: none;
+    text-decoration: none;
+}
+
+section.home {
+  background: url(resoruces/home\ bg.svg) center no-repeat;
+  background-size: contain;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: auto;
+    padding: 230px 0 650px 0;
+}
+
+.nav-item {
+    font-family: var(--interfont);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.hero-content .hero-title,
+.hero-content .hero-job {
+    font-family: var(--interfont);
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 60px;
+    color: #172B4D;
+}
+
+.hero-content .hero-job {
+    color: #36B37E;
+}
+
+.hero-content .hero-description {
+    font-family: var(--interfont);
+    font-size: 1.5rem;
+    line-height: 32px;
+    text-align: center;
+}
+
+i.fa-brands {
+    font-size: 1.2rem;
+    color: #505F79;
+}
+
+.down-btn{
+    height: 17px;
+    width: 17px;
+    padding: 8px;
+    border: #DFE1E6 1px solid;
+    border-radius: 50%;
+}
+
+.down-btn a i.fa-solid {
+    font-size: 0.8rem;
+}
+
+
+@media screen and (max-width: 992px) {
+    section.home {
+        background: url(resoruces/header-illsutration-mobile.svg) center no-repeat;
+        background-size: cover;
+      }
+}
