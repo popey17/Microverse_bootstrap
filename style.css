@@ -24,7 +24,7 @@ section.home {
     top: 0;
     left: 50%;
     transform: translate(-50%);
-
+    z-index: 100;
 }
 
 .nav-item {
@@ -70,6 +70,94 @@ i.fa-brands {
     font-size: 0.8rem;
 }
 
+.about-me {
+    padding: 0;
+    margin-bottom: 160px;
+}
+
+.about-me .left-img {
+    position: absolute;
+    left: 0;
+    top: 30%;
+}
+
+.about-me .right-img {
+    position: absolute;
+    right: 0;
+    top: 10%;
+}
+
+.about {
+    max-width: 800px;
+    margin: auto;
+    padding: 192px 0 64px 0;
+}
+
+.about-content {
+    position: relative;
+}
+
+.about-content .about-title {
+    font-family: var(--interfont);
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 60px;
+    color: #172B4D;
+}
+
+.about-content .about-description {
+    font-family: var(--interfont);
+    font-size: 1.5rem;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+.skill-card {
+    background: #C1C7D0;
+    height: 350px;
+}
+
+.icon-container {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #DFE1E6;
+}
+
+.skills {
+    width: 80%;
+}
+
+.contact-form {
+    position: relative;
+    margin-bottom: 225px;
+}
+
+.contact-title {
+    font-family: var(--interfont);
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 52px;
+
+}
+
+.contact-left {
+    position: absolute;
+    left: 0;
+    top: 60%;
+}
+
+.contact-mid {
+    position: absolute;
+    left: 20%;
+    top: 100%;
+}
+
+.contact-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
 
 @media screen and (max-width: 992px) {
     section.home {
@@ -93,7 +181,40 @@ i.fa-brands {
         font-weight: 700;
         line-height: 52px;
     }
+
     .hero-content .hero-description {
         font-size: 1.25rem;
+    }
+
+    .about-me .left-img {
+        left: -20px;
+        top: 80%;
+        height: 60px;
+    }
+    
+    .about-me .right-img {
+        right: 0px;
+        top: 10%;
+        width: 100px;
+    }
+
+    .contact-title {
+        text-align: center;
+    }
+
+    .contact-left,
+    .contact-mid {
+        display: none;
+    }
+
+    .contact-right {
+        position: absolute;
+        right: -10px;
+        top: 90%;
+        width: 80px;
+    }
+
+    .submit-btn {
+        margin-left: 35%;
     }
 }
