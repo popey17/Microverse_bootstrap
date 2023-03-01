@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Poppins&family=Roboto&display=swap');
+
+:root {
+    --interfont: font-family: 'Inter', sans-serif;
+}
+
+* {
+    list-style: none;
+    text-decoration: none;
+}
+
+section.home {
+    background: url(resoruces/home\ bg.svg) no-repeat center center / cover;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: auto;
+    padding: 230px 0 650px 0;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+
+}
+
+.nav-item {
+    font-family: var(--interfont);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.hero-content .hero-title,
+.hero-content .hero-job {
+    font-family: var(--interfont);
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 60px;
+    color: #172B4D;
+}
+
+.hero-content .hero-job {
+    color: #36B37E;
+}
+
+.hero-content .hero-description {
+    font-family: var(--interfont);
+    font-size: 1.5rem;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+i.fa-brands {
+    font-size: 1.2rem;
+    color: #505F79;
+}
+
+.down-btn {
+    height: 17px;
+    width: 17px;
+    padding: 8px;
+    border: #DFE1E6 1px solid;
+    border-radius: 50%;
+}
+
+.down-btn a i.fa-solid {
+    font-size: 0.8rem;
+}
+
+
+@media screen and (max-width: 992px) {
+    section.home {
+        background: url(resoruces/header-illsutration-mobile.svg) no-repeat center center;
+        background-size: calc(max(100%, 300px));
+    }
+
+    .navbar {
+        position: unset;
+        transform: unset;
+    }
+
+    .hero-content {
+        max-width: 80%;
+        padding: 74px 0 0 0;
+    }
+
+    .hero-content .hero-title,
+    .hero-content .hero-job {
+        font-size: 2.5rem;
+        font-weight: 700;
+        line-height: 52px;
+    }
+    .hero-content .hero-description {
+        font-size: 1.25rem;
+    }
+}
