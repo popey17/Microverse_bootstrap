@@ -77,7 +77,7 @@ To run the project:
 
   clone the file into the desire foler:
   ```sh
-    git clone https://github.com/popey17/Leo-Portfolio.git
+    git clone https://github.com/popey17/Microverse_bootstrap.git
     cd to the folder
   ```
   open HTML file with desired browser
